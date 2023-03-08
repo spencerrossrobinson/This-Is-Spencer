@@ -1,4 +1,5 @@
-import background from "../imgs/redLightbulbMED.jpg";
+import background from "../imgs/flower.jpg";
+import mistake from "../imgs/redsand.jpg";
 import "../css/Home.css";
 import {
   Card,
@@ -9,36 +10,51 @@ import {
   Container,
   Row,
   Col,
+  CardBody,
+  CardFooter,
 } from "reactstrap";
 
 const HomePage = () => {
   return (
     <div>
       <div>
-        <Card inverse color="dark" outline>
-          <CardImg alt="Card image cap" src={background} width="100%" />
+        <Card inverse className="all-black">
+          <CardImg
+            alt="Card image cap"
+            src={background}
+            style={{ height: 500 }}
+            width="100%"
+          />
           <CardImgOverlay>
             <Container fluid className="mt-5">
               <Row>
-                <Col>
-                  <CardTitle tag="h1">Spencer</CardTitle>
+                <Col className="extra-bold">
+                  <CardTitle tag="h1" className="extra-bold">
+                    Spencer Robinson
+                  </CardTitle>
                 </Col>
               </Row>
+              {/* <Row>
+                <Col xs={{ offset: 1 }}>
+                  <CardTitle tag="h2" className="extra-bold">
+                    Robinson
+                  </CardTitle>
+                </Col>
+              </Row> */}
               <Row>
                 <Col xs={{ offset: 1 }}>
-                  <CardTitle tag="h2">Robinson</CardTitle>
+                  <CardTitle tag="h3" className="extra-bold">
+                    Full Stack Development
+                  </CardTitle>
                 </Col>
               </Row>
-              <Row>
-                <Col xs={{ offset: 2 }}>
-                  <CardTitle tag="h3">Full Stack</CardTitle>
-                </Col>
-              </Row>
-              <Row>
+              {/* <Row>
                 <Col xs={{ offset: 3 }}>
-                  <CardTitle tag="h5">Web & Mobile Dev</CardTitle>
+                  <CardTitle tag="h5" className="extra-bold">
+                    Web & Mobile Dev
+                  </CardTitle>
                 </Col>
-              </Row>
+              </Row> */}
             </Container>
           </CardImgOverlay>
         </Card>
