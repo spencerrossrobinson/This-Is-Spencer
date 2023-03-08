@@ -1,0 +1,24 @@
+/* .main-background {
+  background-image: url("../imgs/srrprofile.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.main-container {
+  height: 700px;
+  margin: 0;
+} */
+
+.head {
+  margin-top: 100px;
+}
+
+.spencer:hover .show {
+  display: none;
+}
+.spencer .hide {
+  display: none;
+}
+.spencer:hover .hide {
+  display: inline;
+}
