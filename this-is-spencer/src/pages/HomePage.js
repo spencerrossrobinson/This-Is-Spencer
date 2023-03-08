@@ -1,39 +1,48 @@
-import background from "../imgs/srrprofile.jpg";
+import background from "../imgs/redLightbulbMED.jpg";
 import "../css/Home.css";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import {
+  Card,
+  CardImg,
+  CardImgOverlay,
+  CardText,
+  CardTitle,
+  Container,
+  Row,
+  Col,
+} from "reactstrap";
 
 const HomePage = () => {
   return (
     <div>
-      <Container>
-        <Row className="text-light">
-          <Col xs={8} className="head spencer">
-            <span className="show h1 border-bottom border-success border-5">
-              SPENCER
-            </span>
-            <span
-              className="hide h1 border-bottom border-success border-5"
-              as="a"
-            >
-              ABOUT ME
-            </span>
-            <Col sm={{ offset: 2 }} className="mt-5">
-              <h1 className="border-bottom border-danger border-5">ROSS</h1>
-              <Col sm={{ offset: 2 }} className="mt-5">
-                <h1 className="border-bottom border-info border-5">ROBINSON</h1>
-                <Col sm={{ offset: 2 }} className="mt-5">
-                  <h1 className="border-bottom border-warning border-5">
-                    FULLSTACK
-                  </h1>
+      <div>
+        <Card inverse color="dark" outline>
+          <CardImg alt="Card image cap" src={background} width="100%" />
+          <CardImgOverlay>
+            <Container fluid className="mt-5">
+              <Row>
+                <Col>
+                  <CardTitle tag="h1">Spencer</CardTitle>
                 </Col>
-              </Col>
-            </Col>
-          </Col>
-          <Col className="mt-5">
-            <Image fluid src={background} xs={4} rounded />
-          </Col>
-        </Row>
-      </Container>
+              </Row>
+              <Row>
+                <Col xs={{ offset: 1 }}>
+                  <CardTitle tag="h2">Robinson</CardTitle>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={{ offset: 2 }}>
+                  <CardTitle tag="h3">Full Stack</CardTitle>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={{ offset: 3 }}>
+                  <CardTitle tag="h5">Web & Mobile Dev</CardTitle>
+                </Col>
+              </Row>
+            </Container>
+          </CardImgOverlay>
+        </Card>
+      </div>
     </div>
   );
 };
