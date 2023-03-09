@@ -21,7 +21,7 @@ const RootLayout = () => {
       <header>
         <Navbar className="custom-nav" dark expand="md" fixed="top">
           <NavbarBrand href="/">Spencer.</NavbarBrand>
-          <NavbarText style={{ color: "#f72585" }}>Welcome in</NavbarText>
+          <NavbarText style={{ color: "#f72585" }}>Welcome</NavbarText>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ms-auto" navbar>
