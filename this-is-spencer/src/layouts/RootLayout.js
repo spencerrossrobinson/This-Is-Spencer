@@ -9,6 +9,7 @@ import {
   NavbarText,
 } from "reactstrap";
 import { Outlet, NavLink } from "react-router-dom";
+import "../css/Root.css";
 
 const RootLayout = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +19,9 @@ const RootLayout = () => {
   return (
     <div>
       <header>
-        <Navbar color="dark" dark expand="md">
+        <Navbar className="custom-nav" dark expand="md" fixed="top">
           <NavbarBrand href="/">Spencer.</NavbarBrand>
-          <NavbarText>Simple Text</NavbarText>
+          <NavbarText style={{ color: "#f72585" }}>Welcome in</NavbarText>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ms-auto" navbar>

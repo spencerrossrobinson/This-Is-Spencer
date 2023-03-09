@@ -21,7 +21,7 @@ import {
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="mt-5">
       <div>
         <Container fluid className="p-0 m-0">
           <Card inverse className="all-black">
