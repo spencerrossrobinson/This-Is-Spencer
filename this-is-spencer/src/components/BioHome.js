@@ -21,7 +21,7 @@ const BioHome = () => {
     <div>
       <Container>
         <Row>
-          <Col xs="4">
+          <Col md="4">
             <p className="border-under-pink">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Accusantium, similique nulla natus dignissimos blanditiis optio
@@ -35,7 +35,7 @@ const BioHome = () => {
               hic obcaecati reprehenderit accusamus eum pariatur illum!
             </p>
           </Col>
-          <Col xs="4">
+          <Col xs="8" md="4" className="mx-auto pb-3">
             <Card inverse className="all-black">
               <CardImg
                 alt="Card image cap"
@@ -44,12 +44,12 @@ const BioHome = () => {
                   height: 470,
                   border: "3px solid #7209b7",
                 }}
-                width="50%"
+                width="100%"
               />
               <CardImgOverlay></CardImgOverlay>
             </Card>
           </Col>
-          <Col xs="4">
+          <Col md="4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Accusantium, similique nulla natus dignissimos blanditiis optio
             minus? Neque recusandae nesciunt, numquam, explicabo minus cumque
