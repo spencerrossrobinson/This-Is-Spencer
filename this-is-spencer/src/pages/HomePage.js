@@ -1,5 +1,6 @@
 import background from "../imgs/flower.jpg";
 import mistake from "../imgs/redsand.jpg";
+import profile from "../imgs/srrprofile.jpg";
 import lightbulb from "../imgs/redLightbulb.jpg";
 import "../css/Home.css";
 import {
@@ -22,15 +23,15 @@ const HomePage = () => {
   return (
     <div>
       <div>
-        <Card inverse className="all-black">
-          <CardImg
-            alt="Card image cap"
-            src={background}
-            style={{ height: 500 }}
-            width="100%"
-          />
-          <CardImgOverlay>
-            <Container fluid className="mt-5">
+        <Container fluid className="p-0 m-0">
+          <Card inverse className="all-black">
+            <CardImg
+              alt="Card image cap"
+              src={background}
+              style={{ height: 500 }}
+              width="100%"
+            />
+            <CardImgOverlay>
               <Row>
                 <Col className="extra-bold">
                   <CardTitle tag="h1" className="extra-bold line-under-blue">
@@ -59,9 +60,9 @@ const HomePage = () => {
                   </CardTitle>
                 </Col>
               </Row> */}
-            </Container>
-          </CardImgOverlay>
-        </Card>
+            </CardImgOverlay>
+          </Card>
+        </Container>
       </div>
       <Container className="my-5">
         <Row>
@@ -73,16 +74,20 @@ const HomePage = () => {
             projects from Back End to Front End heres some other words.
           </h3>
         </Row>
-        <Row className="my-5">
-          <Col>
+        <Row className="my-5 mx-auto border-under-pink">
+          <Col xs="4">
             <Card
               style={{
                 width: "20rem",
+                backgroundColor: "black",
               }}
-              color="dark"
               body
             >
-              <img alt="Sample" src={lightbulb} />
+              <img
+                alt="Sample"
+                src={lightbulb}
+                style={{ border: "1px solid #7209b7" }}
+              />
               <CardBody>
                 <CardTitle tag="h5" className="text-center">
                   MERN Stack Development
@@ -94,45 +99,91 @@ const HomePage = () => {
               </CardBody>
             </Card>
           </Col>
-          <Col>
+          <Col xs="4">
             <Card
               style={{
                 width: "20rem",
+                backgroundColor: "black",
               }}
-              color="dark"
               body
             >
-              <img alt="Sample" src={lightbulb} rounded />
+              <img
+                alt="Sample"
+                src={lightbulb}
+                style={{ border: "1px solid #4cc9f0" }}
+              />
               <CardBody>
                 <CardTitle tag="h5" className="text-center">
                   MERN Stack Development
                 </CardTitle>
-                <CardText>
+                <CardText className="text-center">
                   Responsive websites built for an optimal user experience that
                   achieves your business goals.
                 </CardText>
               </CardBody>
             </Card>
           </Col>
-          <Col>
+          <Col xs="4">
             <Card
               style={{
                 width: "20rem",
+                backgroundColor: "black",
               }}
-              color="dark"
               body
             >
-              <img alt="Sample" src={lightbulb} />
+              <img
+                alt="Sample"
+                src={lightbulb}
+                style={{ border: "1px solid #F72585" }}
+              />
               <CardBody>
                 <CardTitle tag="h5" className="text-center">
                   MERN Stack Development
                 </CardTitle>
-                <CardText>
+                <CardText className="text-center">
                   Responsive websites built for an optimal user experience that
                   achieves your business goals.
                 </CardText>
               </CardBody>
             </Card>
+          </Col>
+        </Row>
+      </Container>
+      <Container>
+        <Row>
+          <Col xs="4">
+            <p className="border-under-pink">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium, similique nulla natus dignissimos blanditiis optio
+              minus? Neque recusandae nesciunt, numquam, explicabo minus cumque
+              hic obcaecati reprehenderit accusamus eum pariatur illum!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium, similique nulla natus dignissimos blanditiis optio
+              minus? Neque recusandae nesciunt, numquam, explicabo minus cumque
+              hic obcaecati reprehenderit accusamus eum pariatur illum!
+            </p>
+          </Col>
+          <Col xs="4">
+            <Card inverse className="all-black">
+              <CardImg
+                alt="Card image cap"
+                src={profile}
+                style={{
+                  height: 470,
+                  border: "3px solid #7209b7",
+                }}
+                width="50%"
+              />
+              <CardImgOverlay></CardImgOverlay>
+            </Card>
+          </Col>
+          <Col xs="4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Accusantium, similique nulla natus dignissimos blanditiis optio
+            minus? Neque recusandae nesciunt, numquam, explicabo minus cumque
+            hic obcaecati reprehenderit accusamus eum pariatur illum!
           </Col>
         </Row>
       </Container>

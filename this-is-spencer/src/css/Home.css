@@ -23,3 +23,7 @@
   display: inline;
   border-bottom: 3px solid #f72585;
 }
+.border-under-pink {
+  border-bottom: 3px solid #f72585;
+  padding-bottom: 50px;
+}
