@@ -97,6 +97,9 @@ const HomePage = () => {
                   achieves your business goals.
                 </CardText>
               </CardBody>
+              <Button style={{ backgroundColor: "#7209b7", border: "none" }}>
+                Projects
+              </Button>
             </Card>
           </Col>
           <Col xs="4">
@@ -121,6 +124,9 @@ const HomePage = () => {
                   achieves your business goals.
                 </CardText>
               </CardBody>
+              <Button style={{ backgroundColor: "#4cc9f0", border: "none" }}>
+                Projects
+              </Button>
             </Card>
           </Col>
           <Col xs="4">
@@ -145,6 +151,9 @@ const HomePage = () => {
                   achieves your business goals.
                 </CardText>
               </CardBody>
+              <Button style={{ backgroundColor: "#f72585", border: "none" }}>
+                Projects
+              </Button>
             </Card>
           </Col>
         </Row>
