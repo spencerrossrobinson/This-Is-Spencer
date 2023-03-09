@@ -11,3 +11,15 @@
 .all-black {
   background-color: black;
 }
+.line-under-purple {
+  display: inline;
+  border-bottom: 3px solid #7209b7;
+}
+.line-under-blue {
+  display: inline;
+  border-bottom: 3px solid #4cc9f0;
+}
+.line-under-pink {
+  display: inline;
+  border-bottom: 3px solid #f72585;
+}
