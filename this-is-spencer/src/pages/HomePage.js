@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import background from "../imgs/flower.jpg";
 import mistake from "../imgs/redsand.jpg";
 import profile from "../imgs/srrprofile.jpg";
@@ -20,8 +21,17 @@ import {
 } from "reactstrap";
 import ThreeCardsHome from "../components/ThreeCardsHome";
 import BioHome from "../components/BioHome";
+import LoginModal from "../components/LoginModal";
+import NameContext from "../context/name";
+import { useContext } from "react";
 
 const HomePage = () => {
+  const { name } = useContext(NameContext);
+
+  useEffect(() => {
+    document.title = `Welcome ${name ? name : "to my website"}`;
+  }, [name]);
+
   return (
     <div className="mt-5">
       <div>
@@ -49,9 +59,17 @@ const HomePage = () => {
                   </CardTitle>
                 </Col>
               </Row>
+              <Row>
+                <Col xs={{ offset: 1 }} className="mt-3">
+                  <CardTitle tag="h3" className="extra-bold line-under-purple">
+                    Welcome {name ? name : "Loyal Guest"}
+                  </CardTitle>
+                </Col>
+              </Row>
             </CardImgOverlay>
           </Card>
         </Container>
+        {!name && <LoginModal />}
       </div>
       <ThreeCardsHome />
       <BioHome />
