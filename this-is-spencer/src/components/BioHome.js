@@ -15,6 +15,7 @@ import {
   Button,
   img,
 } from "reactstrap";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const BioHome = () => {
   return (
@@ -22,18 +23,20 @@ const BioHome = () => {
       <Container>
         <Row>
           <Col md="4">
-            <p className="border-under-pink">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium, similique nulla natus dignissimos blanditiis optio
-              minus? Neque recusandae nesciunt, numquam, explicabo minus cumque
-              hic obcaecati reprehenderit accusamus eum pariatur illum!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium, similique nulla natus dignissimos blanditiis optio
-              minus? Neque recusandae nesciunt, numquam, explicabo minus cumque
-              hic obcaecati reprehenderit accusamus eum pariatur illum!
-            </p>
+            <AnimationOnScroll animateIn="animate__bounceIn">
+              <p className="border-under-pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium, similique nulla natus dignissimos blanditiis optio
+                minus? Neque recusandae nesciunt, numquam, explicabo minus
+                cumque hic obcaecati reprehenderit accusamus eum pariatur illum!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium, similique nulla natus dignissimos blanditiis optio
+                minus? Neque recusandae nesciunt, numquam, explicabo minus
+                cumque hic obcaecati reprehenderit accusamus eum pariatur illum!
+              </p>
+            </AnimationOnScroll>
           </Col>
           <Col xs="8" md="4" className="mx-auto pb-3">
             <Card inverse className="all-black">
@@ -50,10 +53,20 @@ const BioHome = () => {
             </Card>
           </Col>
           <Col md="4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Accusantium, similique nulla natus dignissimos blanditiis optio
-            minus? Neque recusandae nesciunt, numquam, explicabo minus cumque
-            hic obcaecati reprehenderit accusamus eum pariatur illum!
+            <AnimationOnScroll animateIn="animate__bounceIn">
+              <p className="border-under-pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium, similique nulla natus dignissimos blanditiis optio
+                minus? Neque recusandae nesciunt, numquam, explicabo minus
+                cumque hic obcaecati reprehenderit accusamus eum pariatur illum!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium, similique nulla natus dignissimos blanditiis optio
+                minus? Neque recusandae nesciunt, numquam, explicabo minus
+                cumque hic obcaecati reprehenderit accusamus eum pariatur illum!
+              </p>
+            </AnimationOnScroll>
           </Col>
         </Row>
       </Container>

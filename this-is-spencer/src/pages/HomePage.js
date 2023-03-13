@@ -24,6 +24,7 @@ import BioHome from "../components/BioHome";
 import LoginModal from "../components/LoginModal";
 import NameContext from "../context/name";
 import { useContext } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const HomePage = () => {
   const { name } = useContext(NameContext);
@@ -60,7 +61,7 @@ const HomePage = () => {
                 </Col>
               </Row>
               <Row>
-                <Col xs={{ offset: 1 }} className="mt-3">
+                <Col xs={{ offset: 2 }} className="mt-3">
                   <CardTitle tag="h3" className="extra-bold line-under-purple">
                     Welcome {name ? name : "Loyal Guest"}
                   </CardTitle>
